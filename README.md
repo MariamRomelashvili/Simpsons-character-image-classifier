@@ -38,15 +38,6 @@ A custom CNN (`SimpsonsClassifier`) with 4 convolutional blocks:
 - Seeds are fixed throughout (`42`) for reproducibility.
 - The best checkpoint (`model.pth`) stores model weights, optimizer/scheduler state, the epoch, validation F1, and both `class_to_idx` and `idx_to_class` mappings — everything needed to run inference without access to the training session.
 
-## Requirements
-
-```
-torch
-torchvision
-pillow
-tqdm
-scikit-learn
-```
 
 Both notebooks are written for Google Colab (`inference.ipynb` uses `google.colab.files` for uploads/downloads; `train.ipynb` uses it to download the trained checkpoint).
 
